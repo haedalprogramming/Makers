@@ -86,7 +86,7 @@
 
 그 다음으로는 RTC 모듈에 관한 라이브러리를 설치해 주어야 하는데, 이 라이브러리는 직접 압축파일을 다운받아 통합개발환경에 포함해 주어야 합니다. 다음 링크로 들어가서 압축파일을 다운받아 주세요. 
 
-[msparks/arduino-ds1302](https://github.com/msparks/arduino-ds1302)
+[RTC모듈(DS1302) 라이브러리 다운로드 링크](https://github.com/msparks/arduino-ds1302)
 
 
 위 링크로 들어가서 초록색 버튼으로 된 `Code` 라는 글자를 클릭하고 `Download ZIP` 을 클릭하면 다운로드가 시작됩니다. 
