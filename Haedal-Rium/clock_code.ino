@@ -1,4 +1,3 @@
-
 #include <DS1302.h> //RTC모듈에 필요한 라이브러리
 #include <LiquidCrystal_I2C.h> //LCD with I2C에 필요한 라이브러리
 
@@ -25,13 +24,13 @@ void setup() {
   rtc.writeProtect(false); // rtc데이터를 수정하기 위해 쓰기금지모드를 해제
   rtc.halt(true); // 날짜와 시간을 수정하기 위해 RTC Timer을 정지시킴
   Time tm = rtc.time(); //RTC 내부 시간을 읽으면서 Time 오브젝트 생성
-  tm.yr = 2020; //연도
-  tm.mon = 10; //월
-  tm.date = 19; //일
-  tm.day = 2; //요일(1~7 -> 1:일, 2:월, 3: 화, 4: 수, 5: 목, 6: 금, 7:토)
-  tm.hr = 14; //시간(24시 기준. 예)오후2시는 14로 표현)
-  tm.min = 45; //분
-  tm.sec = 0; //초
+  tm.yr = [연도]; //연도
+  tm.mon = [월]; //월
+  tm.date = [일]; //일
+  tm.day = [요일에 해당하는 숫자]; //요일(1~7 -> 1:일, 2:월, 3: 화, 4: 수, 5: 목, 6: 금, 7:토)
+  tm.hr = [시]; //시(24시 기준. 예)오후2시는 14로 표현)
+  tm.min = [분]; //분
+  tm.sec = [초]; //초
  
   rtc.time(tm); //수정한 값을 RTC에 기록
   rtc.halt(false); //Timer 다시 가동(정지 해제)
